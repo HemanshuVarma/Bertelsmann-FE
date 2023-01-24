@@ -1,0 +1,45 @@
+.container{
+      display:grid;
+      width: 100vw;
+      height: 100vh;
+      grid-template-rows: 1fr 1fr 60px;
+      grid-template-columns: minmax(20vw, 80vw);
+      grid-template-areas: 
+      "h h h h h h"
+      "b b b b a a"
+      "f f f f f f";  
+      border: 2px solid yellow;
+
+  }
+  .box{
+    border: 1px solid red;
+    background: #F8FA9D;
+    }
+
+  .header{
+      /* h -> Header*/
+      grid-area: h;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('images/header_bg.png');
+      background-size: cover;
+      background-color: purple;
+      color: floralwhite;
+  }
+
+  .footer{
+    /* f -> Footer */
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature{
+    /* a -> Author */
+    grid-area: a;
+  }
+  .content{
+    /* b -> body */
+    grid-area: b;
+  }
