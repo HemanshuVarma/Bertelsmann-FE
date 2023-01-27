@@ -19,13 +19,8 @@
   .header{
       /* h -> Header*/
       grid-area: h;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-image: url('images/header_bg.png');
-      background-size: cover;
-      background-color: purple;
       color: floralwhite;
+      font-size: 42px;
   }
 
   .footer{
